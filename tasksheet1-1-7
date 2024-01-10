@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main{
+
+    public static double add(double a, double b) {
+        return a + b;
+    }
+
+    public static double subtract(double a, double b) {
+        return a - b;
+    }
+
+    public static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    public static double divide(double a, double b) {
+        return a / b;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter two numbers:");
+        double num1 = sc.nextDouble();
+        double num2 = sc.nextDouble();
+
+        System.out.println("The sum is " + add(num1, num2));
+        System.out.println("The difference is " + subtract(num1, num2));
+        System.out.println("The product is " + multiply(num1, num2));
+        System.out.println("The quotient is " + divide(num1, num2));
+    }
+}
